@@ -1,5 +1,5 @@
 /**
- * main: Entry point
+ * main - Entry point
  * Return: returns 0 to signal success
  */
 #include <stdio.h>
