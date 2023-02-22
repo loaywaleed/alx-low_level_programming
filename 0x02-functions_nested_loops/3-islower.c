@@ -2,7 +2,7 @@
 /**
  * _islower - checks if the number is lowercase
  * Return: 1 if lower, 0 if not
- * parameter - takes in a lower case c
+ * @c: takes in a lower case c to be checked
  */
 int _islower(int c)
 {
