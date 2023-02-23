@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * main - entry point 
  * Return: 0 for success, 1 for error
  */
+
 int main(void)
 {
 	int i;
 
 	for (i = 0; i <= 100; i++)
 	{
-		if ((!(i % 3)) && (!(i % 5)))
+		if (((i % 3) == 0) && ((i % 5) == 0))
 		{
 			printf("FizzBuzz ");
 		}
@@ -27,4 +29,6 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	putchar('\n');
+	return (0);
 }
