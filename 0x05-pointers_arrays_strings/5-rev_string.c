@@ -15,10 +15,10 @@ void rev_string(char *s)
 	{
 		iterator++;
 	}
-	strlen = iterator;
 	while (iterator--)
 	{
-		s[strlen - iterator - 2] = s[iterator];
+		temp = s[iterator];
+		s[i] = s[iterator - 1];
+		s[iterator - 1] = temp;
 	}
-
 }
