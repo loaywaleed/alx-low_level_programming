@@ -8,17 +8,20 @@
 
 void rev_string(char *s)
 {
-	int iterator = 0;
+	int strlen, i, middle_value, end_of_string;
 	char temp;
 
-	while (s[iterator])
+	strlen = 0;
+	while (s[strlen])
 	{
-		iterator++;
+		strlen++;
 	}
-	while (iterator--)
+	middle_value = strlen / 2;
+	end_of_string = strlen - 1;
+	for (i = 0; i < middle_value; i++)
 	{
-		temp = s[iterator];
-		s[iterator] = s[iterator - 1];
-		s[iterator - 1] = temp;
+		temp = s[i];
+		s[i] = s[end_of_string];
+		s[end_of_string--] = temp;
 	}
 }
