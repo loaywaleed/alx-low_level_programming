@@ -15,11 +15,11 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		return NULL;
 	}
-	char* ptr = destination;
+	char* ptr = dest;
 
- 	while (*source && num--)
+ 	while (*src && n--)
 	{
-		*dest = *source;
+		*dest = *src;
 		dest++;
 		src++;
 	}
