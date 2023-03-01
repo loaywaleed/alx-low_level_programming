@@ -6,7 +6,7 @@
  * @c: string
  */
 
-char *string_to_upper(char *c)
+char *string_toupper(char *c)
 {
 	int i = 0;
 
