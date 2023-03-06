@@ -3,8 +3,8 @@
 /**
  * _memset - function that fills memory with constant byte
  * Return: char
- * @s: input string
- * @b: byte argument
+ * @src: input string
+ * @dest: dest string
  * @n: number of bytes in memory
  */
 
