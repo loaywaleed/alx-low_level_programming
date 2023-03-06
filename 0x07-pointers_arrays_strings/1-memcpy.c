@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - function that fills memory with constant byte
+ * _memcpy - function that fills memory with constant byte
  * Return: char
  * @src: input string
  * @dest: dest string
