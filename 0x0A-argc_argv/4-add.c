@@ -8,12 +8,30 @@
  * Return: 0 for success
  */
 
+int is_number(char *s)
+{
+	int i;
+
+	i = 0;
+	while (*(s + i) != '\0')
+	{
+		if (*(s + i) >= '0' && *(s + i) <= '9')
+		{
+			i++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
+
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum, is_num;
 
 	sum = 0;
-
 	if (argc == 1)
 	{
 		printf("0\n");
@@ -23,15 +41,17 @@ int main(int argc, char *argv[])
 		i = 1;
 		while (i < argc)
 		{
-			if (*argv[i] >= '0' && *argv[i] <= '9')
+			is_num = is_number(argv[i]);
+			if (is_num == 1)
 			{
-				i++;
 				sum += atoi(argv[i]);
 			}
 			else
 			{
-				puts("Error");
+				printf("Error\n");
+				return (1);
 			}
+			i++;
 		}
 		printf("%d\n", sum);
 	}
