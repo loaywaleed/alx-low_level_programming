@@ -9,11 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
-
 	if (argc == 3)
 	{
-		printf("%d\n", argv[1] * argv[2]);
+		printf("%d\n", atoi(argv[1]) *atoi(argv[2]));
 	}
 	else
 	{
