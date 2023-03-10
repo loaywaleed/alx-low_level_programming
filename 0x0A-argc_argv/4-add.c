@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - entry point
- * @argc: number of arguments
- * @argv: arguments themselves
- * Return: 0 for success
+ * is_number - checks to see if input is a number
+ * @s: input to check for numberhood
+ * Return: 1 if it is a number, 0 if not
  */
 
 int is_number(char *s)
@@ -26,6 +25,13 @@ int is_number(char *s)
 	}
 	return (1);
 }
+
+/**
+ * main - prints the sum of positive numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: (0)
+ */
 
 int main(int argc, char *argv[])
 {
