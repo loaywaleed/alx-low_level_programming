@@ -31,6 +31,7 @@ char *_strdup(char *str)
 	while (i < strlen && str[i] != '\0')
 	{
 		a[i] = str[i];
+		i++;
 	}
 	return (a);
 }
