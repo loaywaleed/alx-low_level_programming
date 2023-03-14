@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _strdup - returns a pointer to a memory that containts a copy of 
+ * _strdup - returns a pointer to a memory that containts a copy of
  * string in parameters
  * @str: string to be copied
  * Return: pointer to a string in memory
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		strlen++;
 	}
 
-	a = malloc(sizeof(char) * strlen);
+	a = malloc(sizeof(char) * (strlen + 1));
 	if (str == NULL)
 	{
 		return (NULL);
