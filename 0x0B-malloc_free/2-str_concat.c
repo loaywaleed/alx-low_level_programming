@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	char *a;
 	int len1, len2, i, j, k;
 
-	while(s1[len])
+	while(s1[len1])
 	{
 		len1++;
 	}
@@ -47,6 +47,6 @@ char *str_concat(char *s1, char *s2)
 			k++;
 		}
 	}
-	a[i] - '\0';
+	a[i] = '\0';
 	return (a);
 }
