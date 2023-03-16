@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			p[k] = s1[k];
 		}
-		else if (k >= i)
+		if (k >= i)
 		{
 			p[k] = s2[j];
 			j++;
