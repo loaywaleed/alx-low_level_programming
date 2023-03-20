@@ -6,6 +6,7 @@
  * @name: new dog's name
  * @age: new dog's age
  * @owner: new dog's owner
+ * Return: dog_t
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -15,11 +16,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	p = malloc(sizeof(dog_t));
 	i = 0, j = 0;
-	while(name[i])
+	if (p == NULL)
+	{
+		free(p);
+		return (NULL);
+	}
+	while (name[i])
 	{
 		i++;
 	}
-	while(owner[j])
+	while (owner[j])
 	{
 		j++;
 	}
