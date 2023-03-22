@@ -18,8 +18,8 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	if ((argv[2][1] != 0) || ((argv[2][0] != '+') && (argv[2][0] != '-')
-			       	&& (argv[2][0] != '*') && (argv[2][0] != '/') &&
-			       	(argv[2][0] != '%')))
+		&& (argv[2][0] != '*') && (argv[2][0] != '/') &&
+		(argv[2][0] != '%')))
 	{
 		puts("Error");
 		exit(99);
