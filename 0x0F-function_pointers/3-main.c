@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	{
 		puts("Error");
 		exit(99);
-	}i
+	}
 	if ((argv[2][0] == '/' || (argv[2][0] == '%')) && atoi(argv[3]) == 0)
 	{
 		puts("Error");
