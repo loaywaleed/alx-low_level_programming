@@ -4,12 +4,13 @@
 /**
  * main - entry point
  * Return: 0 for success
+ * @argc: number of arguments
+ * @argv: cli args
  */
 
-int main(int argc, int **argv)
+int main(int argc, char **argv)
 {
 	int result;
-	int a, b;
 
 	if (argc != 4)
 	{
@@ -27,6 +28,6 @@ int main(int argc, int **argv)
 		exit(100);
 	}
 	result = get_op_func(argv[2]) (atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", v);
+	printf("%d\n", result);
 	return (0);
 }
