@@ -13,8 +13,11 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
-	if (format == NULL)
+	while (format == NULL)
+	{
 		printf("\n");
+		return;
+	}
 	while (format[i])
 	{
 		char *f_specifier;
