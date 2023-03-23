@@ -36,9 +36,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				f_specifier = va_arg(args, char *);
 				if (f_specifier == NULL)
-				{
-					printf("(nil)");
-				}
+					f_specifier = "(nil)";
 				printf("%s", f_specifier);
 				break;
 		}
