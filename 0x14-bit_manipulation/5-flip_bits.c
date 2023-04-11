@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * flip_bits - bits needed to flip to get to another number;
+ * flip_bits - bits needed to flip to get to another number
  * @n: first number
- * @index: second number
+ * @m: second number
  * Return: number of bits
  */
 
