@@ -7,13 +7,13 @@
  * Return: number of bits
  */
 
-int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int i, num_of_flips = 0;
+	unsigned int i, num_of_flips = 0;
 
 	for (i = 0; i < sizeof(long int) * 8; i++)
 	{
-		if (m & 1 != n & 1)
+		if ((m & 1) != (n & 1))
 		{
 			num_of_flips++;
 		}
