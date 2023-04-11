@@ -9,7 +9,7 @@
 
 int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int i, num_of_flips;
+	int i, num_of_flips = 0;
 
 	for (i = 0; i < sizeof(long int) * 8; i++)
 	{
