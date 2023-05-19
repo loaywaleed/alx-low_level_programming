@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_dlistint - function that prints all the elements
  * @h: header
