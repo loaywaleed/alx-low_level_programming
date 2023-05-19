@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_dlistint - function that prints all the elements
+ * dlistint_len - function that returns number of nodes
  * @h: header
  * Return: size_t
  */
